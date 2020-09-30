@@ -1,24 +1,20 @@
-function typeOfNumber(inputValue) {
-  if (inputValue === 0 || inputValue === 1) {
-    return `Число ${ inputValue } - не простое или составное число` ;
+function testValue(numb) {
+  if (numb === 0 || numb === 1) {
+    return `${numb} не является простым или составным числом`
   }
 
-  if ((inputValue > 1) && (inputValue < 1000)) {
-    if (inputValue !== 2 ) {
-      for (var i = 2; i < inputValue; i += 1) {
-        if (inputValue % i !== 0) {
-          return `Число ${inputValue} - составное число`;
-        };
-        if (inputValue % i === 0) {
-          return `Число ${inputValue} - простое число` ;
-        };
-      };
-    } else {
-        return `Число ${inputValue} - простое число`;
+  if (numb > 1 && numb < 1000) {
+    if (numb === 2) return `Число ${numb} - простое число`;
+    
+    for (let i = 2; i < numb; i++) {
+      if ( numb % i === 0) {
+        return `Число ${numb} - составное число`;
+      }
     };
+    return `Число ${numb} - простое число`;
   };
 
-  return 'Данные неверны'; 
+    return `Данные неверны`
 };
 
-module.exports = typeOfNumber;
+module.exports = testValue;
