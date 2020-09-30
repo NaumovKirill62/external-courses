@@ -5,6 +5,7 @@ function maxValueArray(myArray) {
       maxValue = myArray[i];   
     };
   };
+  
   return maxValue;
 };
 module.exports = maxValueArray

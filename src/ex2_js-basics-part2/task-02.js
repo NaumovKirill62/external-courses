@@ -1,11 +1,9 @@
-let MyArray = [1, 2, 3];
-function scanArray(MyArray) {
-  for (let i = 0 ; i < MyArray.length ; i += 1) {
-    console.log(MyArray[i]);
-    continue;
-  };  
-  console.log(`Длинна массива ${ MyArray.length }`);
+function scanArray(myArray) {
+  for (let i = 0 ; i < myArray.length ; i += 1) {
+    console.log(myArray[i]);
+  }  
+  console.log(`Длинна массива ${myArray.length}`);
   return;
 };
-ScanArray(MyArray);
-module.exports = scanArray
+
+module.exports = scanArray;
