@@ -3,9 +3,9 @@ function EqualValues(myArray) {
     if (myArray[i] !== myArray[i + 1]) {
       return false;
     }
-
-    return true;
   };
+
+  return true;
 };
 
-module.exports = EqualValues
+module.exports = EqualValues;

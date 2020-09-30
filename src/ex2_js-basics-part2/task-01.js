@@ -5,12 +5,8 @@ function detective(value) {
     return undefined
   }
 
-  if ( type === 'number' ) {
-    return 'number'
-  }
-
-  if ( type === 'string') {
-    return 'string';
+  if (type === 'number' || type === 'string') {
+    return type;
   }
 
   return undefined

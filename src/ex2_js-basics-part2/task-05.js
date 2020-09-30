@@ -8,4 +8,5 @@ function maxValueArray(myArray) {
   
   return maxValue;
 };
+
 module.exports = maxValueArray

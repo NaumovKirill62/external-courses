@@ -3,6 +3,7 @@ function scanArray(myArray) {
     console.log(myArray[i]);
   }  
   console.log(`Длинна массива ${myArray.length}`);
+  
   return;
 };
 

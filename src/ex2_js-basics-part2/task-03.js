@@ -7,9 +7,9 @@ function CountArray(myArray) {
     if (typeof myArray[i] === 'number') {
         if (myArray[i] === 0) {
           numbersOfZero = numbersOfZero + 1;
-        } else if (myArray[i] % 2 > 0) {
+        } else if (myArray[i] % 2 !== 0) {
           numberOfOddNumbers = numberOfOddNumbers + 1;
-        } else if (myArray[i] % 2 === 0) {
+        } else {
           numberOfEvenNumbers = numberOfEvenNumbers + 1;
         }
     };
