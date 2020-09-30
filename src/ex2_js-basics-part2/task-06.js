@@ -10,9 +10,10 @@ function testValue(numb) {
       if ( numb % i === 0) {
         return `Число ${numb} - составное число`;
       }
-    };
+    }
+    
     return `Число ${numb} - простое число`;
-  };
+  }
 
     return `Данные неверны`
 };
