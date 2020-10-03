@@ -1,6 +1,10 @@
 function addPropertyInObject(property,obj) {
-  if (!(property in obj)) {
-// eslint-disable-line    obj[property] = 'new';
+const objectDefault = {
+  [property] : 'new',
+};
+
+  if (!(obj.hasOwnProperty(property))) {  
+    Object.assign(obj, objectDefault);
   }
 
 return obj;
