@@ -5,6 +5,7 @@ function scanArray(myArray) {
   console.log(`Длинна массива ${myArray.length}`);
   
   return;
+  
 };
 
 module.exports = scanArray;

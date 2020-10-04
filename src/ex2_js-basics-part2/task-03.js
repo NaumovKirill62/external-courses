@@ -1,4 +1,4 @@
-function CountArray(myArray) {
+function сountArray(myArray) {
   let numberOfOddNumbers = 0;
   let numberOfEvenNumbers = 0;
   let numbersOfZero = 0 ;
@@ -17,4 +17,5 @@ function CountArray(myArray) {
 
   return [numberOfEvenNumbers, numberOfOddNumbers, numbersOfZero];
 };
-module.exports = CountArray
+
+module.exports = сountArray
