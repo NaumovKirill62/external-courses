@@ -1,13 +1,13 @@
 function addPropertyInObject(property,obj) {
-const objectDefault = {
+  const objectDefault = {
   [property] : 'new',
-};
+  };
 
   if (!(obj.hasOwnProperty(property))) {  
     Object.assign(obj, objectDefault);
   }
 
-return obj;
+  return obj;
 };
 
 module.exports = addPropertyInObject;
