@@ -1,5 +1,4 @@
 function cloneObject(obj) {
-  
   return Object.assign({},obj);
 };
 
