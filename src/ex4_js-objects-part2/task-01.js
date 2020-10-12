@@ -6,6 +6,6 @@ function propertyInObject(key,obj) {
   }
 
   return undefined;
-};
+}
 
 module.exports = propertyInObject;

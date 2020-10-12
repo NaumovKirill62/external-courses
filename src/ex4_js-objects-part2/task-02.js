@@ -1,6 +1,5 @@
 function emptyObjectWithoutPrototype() {
-  const objectWitthoutPrototype = Object.create(null);
-  return objectWitthoutPrototype;
-};
+  return Object.create(null);
+}
 
 module.exports = emptyObjectWithoutPrototype;

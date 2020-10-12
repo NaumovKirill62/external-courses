@@ -1,6 +1,6 @@
 function countSymbol(inputValue) {
-  let inputString = inputValue.split('');
-  let output = {};
+  const inputString = inputValue.split('');
+  const output = {};
   
   for (var char of inputString) {
       if (output[char]) {

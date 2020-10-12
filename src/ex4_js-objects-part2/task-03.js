@@ -1,7 +1,9 @@
-function delSpace(str) {
-  const newStr = str.trim();
+function delSpace(rawStr) {
+  if (rawStr[0] === ' ' || rawStr[rawStr.length] === ' ') {
+    return rawStr.slice(1, -1);
+  }
 
-  return newStr;
-};
+return rawStr;
+}
 
 module.exports = delSpace;

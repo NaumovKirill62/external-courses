@@ -15,6 +15,6 @@ function inputStringInString(rawMainSring, inputString, value) {
   mainSring = mainSring.join(' ');
   
   return mainSring;
-};
+}
 
 module.exports = inputStringInString;
