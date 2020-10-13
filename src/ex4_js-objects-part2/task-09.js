@@ -1,20 +1,20 @@
 function inputStringInString(rawMainSring, inputString, value) {
-  let mainSring = rawMainSring.split(' ');
-  let num = value;
+  let mainSring = [];
   
-  if (num = 0) {
-      mainSring[0] = inputString.concat(mainSring[0]);
+  if (value === 0) {
+    mainSring = rawMainSring.split(' ');
+    mainSring.unshift(inputString);
+  }
+  if (value === rawMainSring.split(' ').length){
+    mainSring = rawMainSring.split(' ');
+    mainSring.push(inputString);
+  } else {
+    mainSring = rawMainSring.split(' ').slice(0, value + 1);
+    mainSring.push(inputString);
+    mainSring.push(rawMainSring.split(' ').slice(value + 1,rawMainSring.length));
   }
 
-  if (num = mainSring.length) {
-      mainSring[num -1] = inputString.concat(" ", mainSring[num -1]);
-  } else {
-      mainSring[num - 1] = mainSring[num - 1].concat(inputString, " ") ;
-  };
-  
-  mainSring = mainSring.join(' ');
-  
-  return mainSring;
+  return mainSring.join(' ');
 }
 
 module.exports = inputStringInString;

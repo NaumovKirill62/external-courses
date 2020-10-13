@@ -4,6 +4,6 @@ function cutString(str,num) {
   }
 
   return str;
-};
+}
 
 module.exports = cutString;

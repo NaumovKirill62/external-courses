@@ -1,15 +1,15 @@
-function upperString (value) {
-    let str = String(value);
+function upperString (rawString) {
+    let resultString = rawString;
 
-    str = str.trim().split(" ");
-    for (let i = 0; i <str.length; i++) {
-        str[i]= str[i].split('');
-        str[i][0]=str[i][0].toUpperCase();
-        str[i] = str[i].join('');
+    resultString = resultString.trim().split(" ");
+    for (let i = 0; i < resultString.length; i++) {
+
+      resultString[i] = resultString[i][0].toUpperCase() + resultString[i].slice(1, resultString[i].length);
     }
-    str = str.join(' ');
+
+    resultString = resultString.join(' ');
     
-    return String(str);
+    return resultString;
   }
 
 module.exports = upperString;

@@ -3,7 +3,7 @@ function delSpace(rawStr) {
     return rawStr.slice(1, -1);
   }
 
-return rawStr;
+  return rawStr;
 }
 
 module.exports = delSpace;
