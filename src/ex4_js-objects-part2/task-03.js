@@ -8,7 +8,7 @@ function delSpace(rawStr) {
     resultString = resultString.slice(0, -1);
   }
 
-  return resultStringrawStr;
+  return resultString;
 }
 
 module.exports = delSpace;
