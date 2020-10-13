@@ -1,9 +1,14 @@
 function delSpace(rawStr) {
-  if (rawStr[0] === ' ' || rawStr[rawStr.length] === ' ') {
-    return rawStr.slice(1, -1);
+  let resultString = rawStr;
+
+  if (resultString[0] === ' ') {
+    resultString = resultString.slice(1);
+  }
+  if (resultString[resultString.length -1] === ' ') {
+    resultString = resultString.slice(0, -1);
   }
 
-  return rawStr;
+  return resultStringrawStr;
 }
 
 module.exports = delSpace;

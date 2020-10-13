@@ -1,20 +1,13 @@
-function inputStringInString(rawMainSring, inputString, value) {
-  let mainSring = [];
-  
-  if (value === 0) {
-    mainSring = rawMainSring.split(' ');
-    mainSring.unshift(inputString);
-  }
-  if (value === rawMainSring.split(' ').length){
-    mainSring = rawMainSring.split(' ');
-    mainSring.push(inputString);
-  } else {
-    mainSring = rawMainSring.split(' ').slice(0, value + 1);
-    mainSring.push(inputString);
-    mainSring.push(rawMainSring.split(' ').slice(value + 1,rawMainSring.length));
-  }
 
-  return mainSring.join(' ');
+
+function inputStringInString(rawMainSring, inputString, value) {
+  const mainArray = rawMainSring.split(' ');
+  let firstString = mainArray.slice(0, value + 1);
+  let secondSring = mainArray.slice(value + 1);
+
+  return firstString.concat(inputString, secondSring).join(' ');
 }
+
+inputStringInString('I am cool', 'very', 1);
 
 module.exports = inputStringInString;
