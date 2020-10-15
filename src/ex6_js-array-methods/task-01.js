@@ -8,20 +8,20 @@ function slice(array, first, last) {
   }
 
   if (isNaN(begin)) {
-      begin = 0;
+    begin = 0;
   }
 
   if (begin < 0) {
-      begin = array.length + begin;
+    begin = array.length + begin;
   }
 
   if (end < 0){
-      end = array.length + end;
+    end = array.length + end;
   }
 
   for (var i = begin; i < end; i++){
     newArray.push(array[i]);
-    }
+  }
 
   return newArray;
 }
