@@ -20,7 +20,9 @@ function slice(array, first, last) {
   }
 
   for (var i = begin; i < end; i++){
+    if (array[i]) {
     newArray.push(array[i]);
+    }
   }
 
   return newArray;
