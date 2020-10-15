@@ -1,26 +1,21 @@
 function reduce(array, callback, initialValue) {
   let previousValue;
+  let i;
   
   if (typeof initialValue === "undefined") {
     previousValue = array[0];
-
-    for (var i = 1; i < array.length; i++){
-      previousValue = callback(previousValue, array[i], i, array); 
-    }
-
-    return previousValue;
-  } 
+    i = 1;
+  }
   
-  if (typeof initialValue !== undefined) {
+  if (typeof initialValue !== "undefined") {
     previousValue = initialValue;
-
-    for (var j = 0; j < array.length; j++){
-      previousValue = callback(previousValue, array[j], j, array); 
-    }
-
-    return previousValue;
+    i = 0;
   }
 
+  for (i; i < array.length; i++){
+    previousValue = callback(previousValue, array[i], i, array); 
+  }
+  
   return previousValue;
 }
 
