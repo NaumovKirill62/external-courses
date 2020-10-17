@@ -1,4 +1,4 @@
-function filter(array, callback){
+function filter(array, callback) {
   let newArray = [];
 
   for (var i = 0; i < array.length; i++) {

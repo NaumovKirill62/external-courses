@@ -2,12 +2,10 @@ function reduce(array, callback, initialValue) {
   let previousValue;
   let i;
   
-  if (typeof initialValue === "undefined") {
+  if (initialValue === undefined) {
     previousValue = array[0];
     i = 1;
-  }
-  
-  if (typeof initialValue !== "undefined") {
+  } else {
     previousValue = initialValue;
     i = 0;
   }
