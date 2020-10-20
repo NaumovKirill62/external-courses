@@ -1,0 +1,22 @@
+div.items {
+  width: 30%;
+  background-color: #fcba03;
+}
+div.items2 {
+  width: 500px;
+  height: 500px;
+  background-image: url(https://pbs.twimg.com/profile_images/774944118262919169/W58otMNV_400x400.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+div.Godzilla {
+  width: 500px;
+  background-color : green;
+}
+img {
+  width: 200px;
+  height: 200px;
+}
+h3{
+  font-family: 'Courier New', Courier, monospace;
+}
