@@ -11,7 +11,7 @@ div.items2 {
 }
 div.Godzilla {
   width: 500px;
-  background-color : green;
+  background-color: green;
 }
 img {
   width: 200px;
@@ -19,4 +19,9 @@ img {
 }
 h3{
   font-family: 'Courier New', Courier, monospace;
+  font-stretch: expanded;
+  font-style: oblique;
+}
+h2 {
+  font-weight: 900;
 }
