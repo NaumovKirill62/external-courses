@@ -1,0 +1,26 @@
+.layer1, .layer2, .layer3 {
+  position: relative;
+}
+
+.layer1{
+  background: rgb(5, 115, 36);
+  height: 300px;
+  width: 80%;
+}
+.layer2{
+  background: rgb(62, 140, 84);
+  height: 300px;
+  width: 80%;
+  bottom: 290px;
+  left: 10px;
+}
+.layer3{
+  background: rgb(107, 174, 126);
+  height: 300px;
+  width: 80%;
+  bottom: 580px;
+  left: 20px;
+}
+.layer1{z-index: 3;}
+.layer2{z-index: 2;}
+.layer3{z-index: 1;}

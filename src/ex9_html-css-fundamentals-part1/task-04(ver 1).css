@@ -1,0 +1,7 @@
+.shadow{
+  background: rgb(5, 115, 36);
+  height: 300px;
+  width: 80%;
+  box-shadow: 10px 10px 0 1px rgb(62, 140, 84), 20px 20px 0 1px rgb(107, 174, 126);
+  padding: 10px;
+}
