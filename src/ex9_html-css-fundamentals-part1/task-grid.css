@@ -1,27 +1,33 @@
-body {
+main {
+  display: grid;
+  grid-template-rows: repeat(4,auto);
+  grid-template-columns: repeat(4,25%);
   padding: 30px;
 }
 header {
+  grid-row-start: 1; 
+  grid-row-end: 2; 
+  grid-column-start: 1;   
+  grid-column-end: 5;
+  
   background: lightblue;
 }
 section {
+  grid-row-start: 2; 
+  grid-row-end: 4; 
+  grid-column-start: 1;   
+  grid-column-end: 4;
   background: lightgreen;
-  width: 75%;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr;
 }
 article {
   background: white;
   margin: 0 0 1rem 0;
 }
 aside {
-  display: grid;
-  grid-template-columns: 1fr 0.5fr;
-  grid-template-rows: 1fr;
-}
-.module {
-  grid-column: 2 / 3;
+  grid-row-start: 4; 
+  grid-row-end: 5; 
+  grid-column-start: 4;   
+  grid-column-end: 5;
   background: pink;
 }
 header, article, section, .module {
