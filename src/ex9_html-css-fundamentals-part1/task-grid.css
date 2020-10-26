@@ -19,7 +19,6 @@ aside {
   display: grid;
   grid-template-columns: 1fr 0.5fr;
   grid-template-rows: 1fr;
-  grid-gap: 1fr;
 }
 .module {
   grid-column: 2 / 3;
