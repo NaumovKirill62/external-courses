@@ -2,6 +2,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  flex-wrap: wrap;
   padding: 30px;
 }
 header {
@@ -16,10 +17,13 @@ article {
   margin: 0 0 1rem 0;
 }
 aside {
-  align-self: flex-end;
   background: pink;
   width: 25%;
 }
 header, article, section, .module {
   padding: 1rem;
+}
+.conteiner{
+  display: flex;
+  flex-direction: row;
 }

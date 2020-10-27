@@ -24,8 +24,8 @@ article {
   margin: 0 0 1rem 0;
 }
 aside {
-  grid-row-start: 4; 
-  grid-row-end: 5; 
+  grid-row-start: 2; 
+  grid-row-end: 4; 
   grid-column-start: 4;   
   grid-column-end: 5;
   background: pink;
