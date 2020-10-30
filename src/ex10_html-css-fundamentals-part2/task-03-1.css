@@ -1,0 +1,13 @@
+@import "task-03-2.css";
+
+tr:nth-child(odd){
+  background-color: #E3EAF3;
+  color: #4C78B3;
+}
+tr:nth-child(even) {
+  background-color: #F2F6FA;
+  color: #4C78B3;
+}
+tr:hover{
+  background-color: #E2E5E9;
+}
