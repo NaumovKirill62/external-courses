@@ -3,7 +3,7 @@ height: 20px;
 width: 20px;
 }
 #head{
-  margin-top: 5%;
+  margin-top: 3%;
   height: 8vh;
   width: 100vw;
   display: flex;
@@ -11,9 +11,11 @@ width: 20px;
   justify-content: space-around;
 }
 #logo {
-  height: 5vh;
+  height: 6vh;
   width: 20vw;
   background-image: url(fonlog.png);
+  background-position: center;
+  background-clip: content-box;
 
   display: inline-flex;
   flex-direction: column;
@@ -22,10 +24,12 @@ width: 20px;
 }
 #logoname {
   font-family: 'Open Sans', sans-serif;
-  font-size: xx-large;
-  color: blue;
+  font-size: 5vh;
+  font-weight: bold;
+  color: #3687C4;
 }
 #block {
+  align-self: flex-end;
   width: 20vw;
   display:flex;
   flex-direction: column;
@@ -44,41 +48,89 @@ i:hover {
 }
 #geo:hover::before {
   content: "Saudi Arabia. Alreyadah";
+  font-family: 'Open Sans', sans-serif;
+  font-size: small;
   width: max-content;
   position: absolute;
-  top: -35px;
-  left: -50px;
+  top: -50px;
+  left: -40px;
   border: 1px solid #BCBEC3;
-  border-radius: 10px;
-  padding: 2px;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 1;
+  background-color: #fff;;
+  z-index: 0;
+}
+#geo:hover::after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  Left: 0px;
+  right: 0px;
+  top: -17px;
+  width: 10px;
+  height: 10px;
+  margin: 0px auto;
+  border-color: #BCBEC3;
+  border-width: 1px;
+  border-style: none solid solid none;
+  background-color: #fff;
+  transform: rotate(45deg);
+  z-index: 1;
 }
 #topbox {
   border-top:1px solid #BCBEC3;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: baseline;
 }
-table.menu {
-  border-collapse: collapse;
-  border: 2px solid white;
+a:visited {
+color: #6D6E71;
 }
-th.men {
+#nav_menu {
+  padding: 0;
+  width: 60vw; 
+  margin: 0 0}
+ul.menu {
+  display: flex;
+  list-style: none;
+  margin: 0; 
+  padding: 0;
+}
+ul.menu li {
+  display: inline;
+}
+div.bottonmenu {
+  text-align: center;
+  width: max-content;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
   font-family: 'Open Sans', sans-serif;
   font-size: 13;
-  border: 1px solid #BCBEC3;
+  font-weight: bold;
+  color: #6D6E71;
   position: relative;
 }
+ul.menu li {
+  border-right: 1px solid #BCBEC3;
+}
+ul.menu li:last-child {
+  border-right: none;
+}
 #search {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 3vh;
   border: none;
 }
 #fin {
-  height: 1vh;
-  width: 1vw;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 1rem;
+  width: 1rem;
 }
 a.bottonmenu {
   text-decoration: none;
@@ -87,8 +139,9 @@ a.bottonmenu {
 a.bottonmenu:hover::before{
   content: "";
   position: absolute;
-  left: 35%;
-  bottom: -16px;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -15px;
   border: 10px solid transparent;
   border-bottom: 10px solid turquoise;
 }
@@ -105,21 +158,40 @@ a.bottonmenu:hover {
   justify-content: center;
 }
 #text {
-  margin-top: 15vh;
-  text-align: center;
+  margin-top: 18vh;
+  line-height: 1.5vh;
 }
 #text1 {
+  margin-left: 32.5%;
+  text-shadow: 1px 1px 1px rgb(164, 159, 159);
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-  font-size: x-large;
-  font-weight: bold;
+  font-size: 42px;
+  font-weight: 900;
+  font-stretch: ultra-expanded;
   color: white;
+  z-index: 3;
+  position: relative;
 }
 #text2 {
+  margin-left: 33%;
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-  font-weight: bold;
+  font-size: 32px;
+  font-weight: 100;
   color: white;
+  position: relative;
+  z-index: 2;
+}
+#text2::before {
+  position: absolute;
+  left: -4.5vw;
+  top: -1vh;
+  content: "&";
+  font-size: 250%;
+  font-weight: 700;
+  color: #6ebbf7;
+  z-index: 1;
 }
 #text {
   display: inline-flex;
@@ -131,15 +203,53 @@ a.bottonmenu:hover {
   justify-content: flex-end;
   margin-right: 15vw;
   margin-bottom: 10vh;
+  overflow: hidden;
  }
-.slides img {
-  width: 10vw;
-  height: 13vh;
+#first {
+  height: 18vh;
+  width: 14vw;
+  background-image: url(green.png);
+  background-size:100% 100%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+#second {
+  height: 18vh;
+  width: 14vw;
+  background-image: url(yellow.png);
+  background-size:100% 100%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+#second div.button_like {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: #FEEB75;
+  text-align: center;
+  color: #CC9800;
+  opacity: 0.9;
+}
+#first div.button_like {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: #8ACA51;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.9;
+}
+a.button_like {
+  text-decoration: none;
 }
 #button {
   background: url(arrow.png) no-repeat,#F4F4F4;
   background-position: center;
-  height: 13vh;
+  height: 18vh;
   width: 2.5vw;
   border: none;
 }
@@ -149,13 +259,15 @@ a.bottonmenu:hover {
   justify-content: space-around;
 }
 p.textinfo1,p.textinfo2 {
+  color: #6D6E71;
   font-family: 'Open Sans', sans-serif;
   text-align: justify;
-  font-size: 16;
+  font-size: 16px;
 }
 span.firstline {
-  font-size: 26;
-  font-weight: bold;
+  font-family: 'Open Sans';
+  font-size: 26px;
+  font-weight: 900;
 }
 div.case1, div.case2 {
   display: inline-flex;
@@ -170,27 +282,48 @@ div.case2 {
   width: 30vw;
 }
 img.logo1 {
-  width: 30vw;
-  height: 12vh;
+  width: 5vw;
+  height: 7vw;
 }
 img.logo2 {
-  width: 30vw;
-  height: 12vh;
+  width: 5vw;
+  height: 7vw;
 }
-
-@media not handheld {
+div.burger {
+  margin-left: 5vw;
+}
+@media screen and (min-width:760px) {
   div.burger {
     visibility: hidden;
   }
+  
   div.findphone {
     visibility: hidden;
   }
 }
-@media handheld {
+@media screen and (max-width:760px) {
+  #logo {
+    margin-left: 35%;
+  }
+  div.findphone {
+    margin-left: 20%;
+  }
   #block {
     visibility: hidden;
   }
   #topbox {
     visibility: hidden;
+  }
+  div.slider-container {
+    visibility: hidden;
+  }
+  .bottominfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .bottominfo div {
+    margin-left: 5vw;
+    width: 70%;
   }
 }
