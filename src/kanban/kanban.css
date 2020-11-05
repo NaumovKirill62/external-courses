@@ -1,23 +1,118 @@
+body {
+  margin:0;
+  padding:0;
+}
 .head {
 position: absolute;
 width: 100vw;
 height: 7vh;
 left: 0px;
 top: 0px;
-
 background: #0067A3;
+display: flex;
+align-items: center;
+
 }
 .burger {
-  margin-left: 2vw;
+  transform: translate(0, -10%);
+  margin-left: 50%;
+  margin-bottom: 30%;
+  height: 3vh;
   display: inline-flex;
   flex-direction: column;
-  justify-content: space-between;
-  line-height: 1px;
+  align-content: space-evenly;
 }
 .string {
+  margin-top: 5%;
   display: inline-flex;
   align-items: center;
 }
 a {
   text-decoration: none;
+}
+
+.titul_logo {
+  margin-left: 2%;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 33px;
+  color: #FFFFFF;
+}
+
+div.btn_new_list {
+  margin-left: 57vw;
+  width: 181px;
+  height: 33px;
+  left: 0px;
+  top: 0px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+a.new_list:visited {
+  color: #000000;
+}
+div.btn_new_list svg {
+  margin-left: 3%;
+}
+span.btn_new_list {
+  margin-left: 3%;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+div.profile {
+  margin-left: 2.5vw;
+  transform: translate(0, 5%);
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+div.option {
+  margin-left: 0.5vw;
+}
+div.foot {
+  height: 6vh;
+  width: 100%;
+  margin: 0;
+  background: #0067A3;
+  display: inline-flex;
+  align-items: center;
+}
+.act_task {
+  margin-left: 5%;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.fin_task {
+  margin-left: 5%;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.by {
+  margin-left: 50%;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
 }
