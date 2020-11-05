@@ -120,13 +120,13 @@ ul.menu li {
 ul.menu li:last-child {
   border-right: none;
 }
-#search {
+input.search {
   margin-top: auto;
   margin-bottom: auto;
   height: 3vh;
   border: none;
 }
-#fin {
+img.fin {
   margin-top: auto;
   margin-bottom: auto;
   height: 1rem;
