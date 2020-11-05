@@ -36,9 +36,9 @@
   background-color: darkgreen;
 }
 .boll {
-  height: 10vh;
-  width: 10vw;
-  clip-path: circle();
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
   background-color: darkorange;
   position: absolute;
   bottom: 10vh;
@@ -54,7 +54,7 @@
     bottom: 15vh;
   }
   100% {
-    left: 10vw;
+    left: 15vw;
     bottom: 5vh;
   }
 }
