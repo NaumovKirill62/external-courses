@@ -1,0 +1,23 @@
+.head {
+position: absolute;
+width: 100vw;
+height: 7vh;
+left: 0px;
+top: 0px;
+
+background: #0067A3;
+}
+.burger {
+  margin-left: 2vw;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1px;
+}
+.string {
+  display: inline-flex;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
