@@ -1,0 +1,90 @@
+.loader {
+  position: absolute;
+  left: 45vw;
+  top: 5vh;
+  height: 5vh;
+  width: 2.5vw;
+  background-color: aqua;
+  animation: spin 4s infinite alternate-reverse;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    background-color: black;
+  }
+  50% {
+    background-color: chartreuse;
+  }
+  75% {
+    background-color: coral;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.box {
+  display: flex;
+  flex-direction: row;
+}
+.square {
+  position: relative;
+  width: 5vw;
+  height: 5vh;
+  margin: 5vw;
+  background-color: darkgreen;
+}
+.boll {
+  height: 10vh;
+  width: 10vw;
+  clip-path: circle();
+  background-color: darkorange;
+  position: absolute;
+  bottom: 10vh;
+  animation: jump 2s infinite linear alternate-reverse;
+}
+@keyframes jump{
+  0% {
+    left: 0;
+    bottom: 5vh;
+  }
+  50% {
+    left: 7.5vw;
+    bottom: 15vh;
+  }
+  100% {
+    left: 10vw;
+    bottom: 5vh;
+  }
+}
+.form {
+  height: 50px;
+  width: 50px;
+  background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+  border-radius: 50%;
+  animation: transformation 5s infinite linear alternate;
+
+}
+@keyframes transformation {
+  0% {
+    border-radius: 0%;
+  }
+  25% {
+    background: repeating-linear-gradient(45deg, #0724e0, #606dbc 10px, #0724e0 10px, #465298 20px);
+  }
+  50% {
+    height: 25px;
+    width: 25px;
+    transform: skew(15deg, 10deg);
+  }
+  75% {
+    transform: rotate(1turn);
+  }
+  90% {
+    background: repeating-linear-gradient(45deg, #0724e0, #20ce57 10px, #0724e0 10px, #20ce57 20px);
+  }
+  100% {
+    border-radius: 50%;
+  }
+}
