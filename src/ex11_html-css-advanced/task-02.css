@@ -11,7 +11,7 @@ label span {
   opacity: 0;
   top: -12px;
   font-size: 0.7em;
-  color:blue;
+  color:gray;
   transition: all 100ms ease;
 }
 
@@ -19,4 +19,7 @@ label span {
    transform: translate(0,-5px);
   opacity: 1;
  
+}
+input:focus + span {
+  color:blue;
 }
