@@ -24,10 +24,11 @@ align-items: center;
   justify-content: center;
 }
 .string {
-  margin-top: 5%;
   display: inline-flex;
   align-items: center;
-  overflow: visible;
+}
+.burger svg:last-child {
+  margin-left: 5%;
 }
 a {
   text-decoration: none;
@@ -44,7 +45,7 @@ a {
 }
 
 div.btn_new_list {
-  width: 181px;
+  width: 110%;
   height: 33px;
   left: 0px;
   top: 0px;
