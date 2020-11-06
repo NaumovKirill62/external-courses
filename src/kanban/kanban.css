@@ -1,38 +1,40 @@
 body {
   margin:0;
   padding:0;
+  height: 100%;
+  min-height: 100%;
 }
 .head {
-position: absolute;
-width: 100vw;
-height: 7vh;
-left: 0px;
-top: 0px;
+margin:0;
+padding:0;
+width: 100%;
+height: 15%;
 background: #0067A3;
 display: flex;
+flex-direction: row;
+justify-content: space-between;
 align-items: center;
 
 }
 .burger {
-  transform: translate(0, -10%);
-  margin-left: 50%;
-  margin-bottom: 30%;
-  height: 3vh;
+  margin-left: 1vw;
+  height: 5vh;
   display: inline-flex;
   flex-direction: column;
-  align-content: space-evenly;
+  justify-content: center;
 }
 .string {
   margin-top: 5%;
   display: inline-flex;
   align-items: center;
+  overflow: visible;
 }
 a {
   text-decoration: none;
 }
 
 .titul_logo {
-  margin-left: 2%;
+  margin-left: 2vw;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -42,7 +44,6 @@ a {
 }
 
 div.btn_new_list {
-  margin-left: 57vw;
   width: 181px;
   height: 33px;
   left: 0px;
@@ -68,7 +69,7 @@ span.btn_new_list {
   color: #000000;
 }
 div.profile {
-  margin-left: 2.5vw;
+  margin-left: 2vw;
   transform: translate(0, 5%);
   display: inline-flex;
   justify-content: center;
@@ -79,10 +80,24 @@ div.profile {
   background-color: #FFFFFF;
 }
 div.option {
-  margin-left: 0.5vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+div.left {
+width: 30%;
+display: inline-flex;
+align-items: center;
+}
+div.right {width: 30%;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+
 }
 div.foot {
-  height: 6vh;
+  position: fixed;
+  bottom: 0;
+  height: 6%;
   width: 100%;
   margin: 0;
   background: #0067A3;
@@ -115,4 +130,8 @@ div.foot {
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
+}
+body {
+  min-height: 100%;
+  background: #2e7dab;
 }
