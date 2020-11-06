@@ -46,19 +46,17 @@
 }
 @keyframes jump{
   0% {
-    left: 0;
-    bottom: 5vh;
+    transform: translate(0, 5vh);
   }
   50% {
-    left: 7.5vw;
-    bottom: 15vh;
+    transform: translate(7.5vw, -5vh);
   }
   100% {
-    left: 15vw;
-    bottom: 5vh;
+    transform: translate(15vw, 5vh);
   }
 }
 .form {
+  margin-left: 50px;
   height: 50px;
   width: 50px;
   background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
@@ -68,21 +66,28 @@
 }
 @keyframes transformation {
   0% {
+    border-radius: 50%;
+  }
+  15% {
     border-radius: 0%;
   }
   25% {
     background: repeating-linear-gradient(45deg, #0724e0, #606dbc 10px, #0724e0 10px, #465298 20px);
+    border-radius: 0%;
   }
   50% {
     height: 25px;
     width: 25px;
     transform: skew(15deg, 10deg);
+    border-radius: 0%;
   }
   75% {
     transform: rotate(1turn);
+    border-radius: 0%;
   }
   90% {
     background: repeating-linear-gradient(45deg, #0724e0, #20ce57 10px, #0724e0 10px, #20ce57 20px);
+    border-radius: 0%;
   }
   100% {
     border-radius: 50%;
