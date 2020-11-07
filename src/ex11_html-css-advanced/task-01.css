@@ -1,0 +1,95 @@
+.loader {
+  position: absolute;
+  left: 45vw;
+  top: 5vh;
+  height: 5vh;
+  width: 2.5vw;
+  background-color: aqua;
+  animation: spin 4s infinite alternate-reverse;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    background-color: black;
+  }
+  50% {
+    background-color: chartreuse;
+  }
+  75% {
+    background-color: coral;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.box {
+  display: flex;
+  flex-direction: row;
+}
+.square {
+  position: relative;
+  width: 5vw;
+  height: 5vh;
+  margin: 5vw;
+  background-color: darkgreen;
+}
+.boll {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: darkorange;
+  position: absolute;
+  bottom: 10vh;
+  animation: jump 2s infinite linear alternate-reverse;
+}
+@keyframes jump{
+  0% {
+    transform: translate(0, 5vh);
+  }
+  50% {
+    transform: translate(7.5vw, -5vh);
+  }
+  100% {
+    transform: translate(15vw, 5vh);
+  }
+}
+.form {
+  margin-left: 50px;
+  height: 50px;
+  width: 50px;
+  background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+  border-radius: 50%;
+  animation: transformation 5s infinite linear alternate;
+
+}
+@keyframes transformation {
+  0% {
+    border-radius: 50%;
+  }
+  15% {
+    border-radius: 0%;
+  }
+  25% {
+    background: repeating-linear-gradient(45deg, #0724e0, #606dbc 10px, #0724e0 10px, #465298 20px);
+    border-radius: 0%;
+  }
+  50% {
+    height: 25px;
+    width: 25px;
+    transform: skew(15deg, 10deg);
+    border-radius: 0%;
+  }
+  75% {
+    transform: rotate(1turn);
+    border-radius: 0%;
+  }
+  90% {
+    background: repeating-linear-gradient(45deg, #0724e0, #20ce57 10px, #0724e0 10px, #20ce57 20px);
+    border-radius: 0%;
+  }
+  100% {
+    border-radius: 50%;
+  }
+}

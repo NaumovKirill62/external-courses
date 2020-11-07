@@ -1,0 +1,25 @@
+label {
+  position: relative;
+}
+label input {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+label span {
+  position: absolute;
+  left: 55px;
+  opacity: 0;
+  top: -12px;
+  font-size: 0.7em;
+  color:gray;
+  transition: all 100ms ease;
+}
+
+ input:valid + span {
+   transform: translate(0,-5px);
+  opacity: 1;
+ 
+}
+input:focus + span {
+  color:blue;
+}
