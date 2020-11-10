@@ -84,6 +84,10 @@ div.option {
   margin-left: 1vw;
   margin-right: 1vw;
 }
+svg.option {
+  fill: white;
+  transform: rotate(180deg);
+}
 div.left {
 width: 30%;
 display: inline-flex;
@@ -135,4 +139,41 @@ div.foot {
 body {
   min-height: 100%;
   background: #2e7dab;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+div.menuProfile {
+  border-radius: 10px;
+  text-align: center;
+  width: vw;
+  margin: 0;
+  padding: 0.5vw;
+  position: absolute;
+  right: 0vw;
+  width: max-content;
+  background: #EBECF0;
+}
+div.menuProfile li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  padding: 0.5vw;
+  background: #FFFFFF;
+  border-radius: 5px;
+  text-align: center;
+  list-style-type: none;
+  margin-bottom: 1vh;
+}
+div.menuProfile ul {
+  margin: 0;
+  padding: 0;
+}
+div.menuProfile a:visited {
+  color: #000000;
+}
+div.menuProfile a:active {
+  color: #000000;
+}
+div.menuProfile li:hover {
+  background-color: grey;
 }
