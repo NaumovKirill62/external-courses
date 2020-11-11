@@ -24,7 +24,7 @@ function nextSlide() {
 function prevSlide() {
   i = i - 1;
   if (i < 0) {
-    i = arrayImage.length;
+    i = arrayImage.length-1;
   }
 
   fone.style.opacity = 0;
@@ -34,5 +34,5 @@ function prevSlide() {
   return i;
 }
 
-btnNext.onclick = nextSlide ;
-btnPrev.onclick = prevSlide ;
+btnNext.addEventListener("click", nextSlide);
+btnPrev.addEventListener("click", prevSlide);

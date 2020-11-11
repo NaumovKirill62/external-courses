@@ -26,7 +26,6 @@ body {
 }
 #prev {
   border: none;
-  outline: 1px solid wheat;
   cursor: pointer;
   height: 20%;
   width: 5%;
@@ -44,7 +43,6 @@ body {
 }
 #next {
   border: none;
-  outline: 1px solid wheat;
   cursor: pointer;
   height: 20%;
   width: 5%;
@@ -53,9 +51,17 @@ body {
 }
 #prev:hover {
   background-color: red;
-  transition: 1s linear;
+  transition: 0.5s linear;
 }
 #next:hover {
   background-color: red;
-  transition: 1s linear;
+  transition: 0.5s linear;
+}
+#prev:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.5px lightskyblue;
+}
+#next:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.5px lightskyblue;
 }
