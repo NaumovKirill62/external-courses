@@ -252,6 +252,9 @@ font-size: 18px;
 line-height: 21px;
 color: #000000;
 }
+button.footblock:hover{
+  cursor: pointer;
+}
 button.footblock {
   width: max-content;
   list-style: none;
@@ -274,9 +277,6 @@ button.footblock svg {
 button.footblock:focus {
   list-style: none;
 }
-.task {
- 
-}
 input {
   width: 90%;
 }
@@ -293,4 +293,7 @@ div.tasks > div {
   background-color: white;
   padding: 5px;
   border-radius: 10px;
+}
+div.tasks :hover {
+  cursor: pointer;
 }
