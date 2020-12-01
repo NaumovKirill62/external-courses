@@ -75,8 +75,8 @@ div.profile {
   display: inline-flex;
   justify-content: center;
   align-items: flex-end;
-  width: 5vh;
-  height: 5vh;
+  width: 40px;
+  height: 40 px;
   border-radius: 50%;
   background-color: #FFFFFF;
 }
@@ -88,8 +88,8 @@ a.profile {
 }
 #arrow {
   fill: white;
-  margin-left: 0.5vw;
-  margin-right: 0.5vw;
+  margin-left: 8px;
+  margin-right: 8px;
   margin-bottom: auto;
 }
 div.left {
@@ -152,10 +152,10 @@ div.menuProfile {
   border-radius: 10px;
   text-align: center;
   margin: 0;
-  padding: 0.5vw;
+  padding: 0.5px;
   position: absolute;
-  top: 5.2vh;
-  right: -2vw;
+  top: 40px;
+  right: -27px;
   width: max-content;
   background: #EBECF0;
 }
