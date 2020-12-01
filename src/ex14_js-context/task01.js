@@ -28,4 +28,5 @@ function Calculator() {
   }
 };
 
-module.exports = Calculator;
+const result = new Calculator();
+module.exports = result;
