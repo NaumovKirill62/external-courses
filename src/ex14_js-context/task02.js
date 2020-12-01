@@ -1,6 +1,6 @@
 function Hangman(word) {
   this.gameWord = word.split('');
-  this.hiddenWord = this.gameWord.map((elem) => {return '_'} );
+  this.hiddenWord = this.gameWord.map(elem => '_');
   this.countMistakes = 6;
   this.wrongWords = [];
   this.guess = function(word) {

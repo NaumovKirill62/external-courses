@@ -1,31 +1,31 @@
-const Calculator = {
-  result: 0,
-  add(elem) {
+function Calculator() {
+  this.result = 0;
+  this.add = (elem) => {
     this.result += elem;
     return this;
-  },
-  subtract(elem) {
+  };
+  this.subtract = (elem) => {
     this.result -= elem;
     return this;
-  },
-  divide(elem) {
+  };
+  this.divide = (elem) => {
     this.result /= elem;
     return this;
-  },
-  multiply(elem) {
+  };
+  this.multiply = (elem) => {
     this.result *= elem;
     return this;
-  },
-  reset() {
+  };
+  this.reset = () => {
     this.result = 0;
     return this;
-  },
-  getResult() {
+  };
+ this.getResult = () => {
     return this.result;
-  },
-  fetchData() {
+  };
+  this.fetchData = () => {
     return (this.result = 500);
   }
 };
 
-module.export = Calculator();
+module.exports = Calculator;
