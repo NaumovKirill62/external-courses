@@ -7,11 +7,9 @@ function CristmasGift (...candys) {
     this.heap.push(candy);
   };
   this.mass = function() {
-    let result = 0;
-    this.heap.forEach(function (elem) {
-      result += elem.mass();
-      return result;
-    });
+    let result = this.heap.reduce(function(sum, element) {
+      return sum +(element.number * element.weight);
+    }, 0);
     return result;
   };
   this.searchcnady = function (value) {
@@ -24,10 +22,10 @@ function CristmasGift (...candys) {
     return findElem === undefined ? null : findElem ;
   };
   this.sortByName = function() {
-    return this.heap.sort((a, b) => a.name > b.name ? 1 : -1);
+    return this.heap.sort((a, b) => a.name - b.name);
   };
   this.sortByNumber = function() {
-    return this.heap.sort((a, b) => a.number > b.number ? 1 : -1);
+    return this.heap.sort((a, b) => a.number - b.number);
   };
   this.sortByWeight = function() {
     return this.heap.sort((a, b) => a.mass() > b.mass() ? 1 : -1);
@@ -44,7 +42,7 @@ function Candy () {
     return (this.number * this.weight);
   }
 }
-Candys.prototype = Candy;
+Candys.prototype = Object.create(Candy.prototype);
 const candy1 = new Candys('Chokolate Candy\'s', 5, 10);
 const candy2 = new Candys('Baunty', 3, 30);
 const candy3 = new Candys('Mars', 2, 20);

@@ -8,12 +8,14 @@ class Flat {
 
   currentElectricPower(...area) {
     let power = 0;
-    if (area === undefined){
-      for (const elem of this.space){
+    if (area.length === 0) {
+      power = this.space.reduce( function (sum, elem) {
         if (elem.plug === true) {
-          power += elem.power;
+          // eslint-disable-next-line no-param-reassign
+          sum += elem.power;
         }
-      }
+        return sum;
+      }, 0)
     }
     if (Array.isArray(area)) {
       area.forEach( (room) => {
